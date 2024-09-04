@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="./kumkumimg1.jpg" width="400px" alt="no image">
+    <picture>
+        <source media="(min-width: 650px)" srcset="./kumkumimg1.jpg" />
+        <source media="(min-width: 650px)" srcset="./kumkumimg1.jpg" />
+        <img src="./kumkumimg1.jpg"alt="">
+    </picture>
+
+    <img src="kumkumimg.jpg" usemap="#image-map">
+<!-- an image map generator -->
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="220,564,37" shape="circle">
+</map>
+<script>
+    function one(){
+        alert("this is lnct logo")
+    }
+</script>
+
+</body>
+</html>
