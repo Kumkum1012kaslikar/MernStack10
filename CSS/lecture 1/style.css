@@ -1,0 +1,92 @@
+/*external css*/
+
+/*tag selector*/
+h1 {
+  color: yellow;
+}
+/*class selector*/
+.wrapper {
+  background-color: brown;
+}
+/*id selector*/
+#hello {
+  background-color: orange;
+}
+
+/*pseudo:class*/
+
+ul li:nth-child(3) {
+  background-color: red;
+}
+
+/*lower to upper*/
+ul li:nth-last-child(4) {
+  background-color: antiquewhite;
+}
+
+ul li:nth-of-type(2n + 3) {
+  background-color: blue;
+}
+
+ul:hover {
+  background-color: blueviolet;
+}
+
+ul li:hover {
+  background-color: brown;
+}
+
+h2 {
+  color: rgb(19, 19, 16);
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold; /*100,2000,..*/
+  font-style: italic; /*normal,oblique*/
+
+  /*text*/
+  text-align: center; /*left,right*/
+  text-decoration: underline;
+  text-decoration-color: black;
+  /* text-decoration: underline black;*/
+
+  /*underline , overline = dashed, dotted, wavy*/
+  text-decoration: underline rgb(39, 201, 84);
+  text-decoration: underline dotted rgb(39, 201, 84);
+  text-decoration: underline wavy rgb(39, 201, 84);
+  text-decoration: underline dashed rgb(39, 201, 84);
+  text-decoration: overline rgb(39, 201, 84);
+  text-decoration: overline dashed rgb(39, 201, 84);
+  text-decoration: overline wavy 2px rgb(39, 201, 84);
+  text-decoration: overline dotted rgb(39, 201, 84);
+
+  /*text shadow*/
+  /*y = up '-' , down '+' */
+  /*x = right '+' , left '-' */
+  /* 3rd px is blur value */
+  text-shadow: 4px, 4px, 3px red;
+}
+
+/*italic to normal*/
+i {
+  font-style: normal;
+
+  /*first letter of sentence is capital*/
+  text-transform: capitalize;
+  /*all letter uppercase*/
+  text-transform: uppercase;
+  /*all letter lowercase*/
+  text-transform: lowercase;
+}
+
+.dummyText {
+  background-color: rgb(226, 168, 92);
+  color: red;
+}
+
+/*hover*/
+.dummyText:hover {
+  background-color: black;
+  text-shadow: none;
+  text-transform: uppercase;
+  text-decoration: underline crimson;
+}
