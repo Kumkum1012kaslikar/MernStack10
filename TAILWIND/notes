@@ -1,0 +1,21 @@
+STEP 1: Check node installation COMMAND: node -v if it is installed then it
+shows you a version of node like v18.16.0
+ STEP 2: create 2 files index.html
+style.css 
+STEP 3: Check directory TAILWIND\Lecture 21.. you can go in directory
+by using cd .\TAILWIND\ cd '.\Lecture 21' 
+STEP 4: COMMAND: npm init -y "create
+package.json" 
+STEP 5: go to documentation and copy COMMAND: npm install -D
+tailwindcss postcss autoprefixer "create node_modules and package-lock.json"
+STEP 6: go to documentation and copy COMMAND: npx tailwindcss init -p "create
+postcss.config.js , tailwind.config.js" 
+STEP 7: go to file tailwind.config.js
+and edit content:["*"] 
+STEP 8: go to style.css and paste @tailwind base;
+@tailwind components; @tailwind utilities; go to index.html and paste
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css" />
+
+STEP 9: npm i vite Step 10: package.json edit "scripts": { "dev": "vite" }, STEP
+11: npm run dev
