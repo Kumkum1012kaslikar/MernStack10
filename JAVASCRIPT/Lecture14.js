@@ -19,3 +19,41 @@ if (true) {
 console.log(a);
 console.log(b);
 console.log(c);
+
+function one() {
+  const username = "histesh";
+
+  function two() {
+    const website = "youtube";
+    //console.log(username);
+  }
+  // console.log(website) //not accessible
+
+  two();
+}
+one();
+
+if (true) {
+  const username = "hitesh";
+  if (username === "hitesh") {
+    const website = " youtube";
+    console.log(username + website);
+  }
+  //console.log(website);  //not accessible
+}
+//console.log(username);   //not accessible
+
+// ++++++++++++INTERESTING++++++++++++++++
+
+//function
+
+function add_one(num) {
+  return num + 1;
+}
+add_one(5);
+
+//function or expression
+const add_Two = function (num) {
+  return num + 2;
+};
+add_Two(5);
