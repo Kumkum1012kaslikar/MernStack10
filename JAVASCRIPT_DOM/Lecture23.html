@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(230, 185, 185);" > Amazing image</h2>
+   <div>
+    <ul id="image">
+        <li><img width="200px" id="photoshop" src="https://i.pinimg.com/originals/cb/fc/fd/cbfcfd7b0e3818c3f9ec996625460eb2.jpg" alt="photoshop"></li>
+       <li><img width="200px" id="owl" src="https://png.pngtree.com/background/20230422/original/pngtree-owl-in-pink-with-big-eyes-sits-in-the-field-picture-image_2451621.jpg" alt="owl"></li>
+       <li><img width="200px" id="river" src="https://png.pngtree.com/background/20230516/original/pngtree-pink-blossomed-river-runs-through-the-trees-picture-image_2611612.jpg" alt="river"></li>
+       <li><a href="https://google.com" id="google">Google</a></li>
+    </ul>
+   </div>
+</body>
+<script>
+//     document.getElementById('owl').onclick = function(){
+//    alert("owl clicked")
+//     }
+
+// document.getElementById('owl').addEventListener('click', function(){
+//     alert("owl clicked again")
+// },false)
+
+// document.getElementById('image').addEventListener('click',function(e){
+//     console.log("clicked inside the ul");
+// }, false)
+
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log("click owl");
+//     e.stopPropagation()
+    
+// }, false)
+
+// document.getElementById('google').addEventListener('click', function(e){
+     
+//        e.preventDefault();
+//      e.stopPropagation();
+//       console.log("google clicked");
+      
+// }, false)
+
+document.querySelector('#image').addEventListener('click', function(e){
+    console.log(e.target.tagName);
+
+    if(e.target.tagName === 'IMG'){
+         console.log(e.target.id);
+         let removeIt=e.target.parentNode
+         removeIt.remove()
+    }
+
+
+    // let removeIt=e.target.parentNode
+    // removeIt.remove()
+
+    
+     //removeIt.parentNode.removeChild(removeIt)
+})
+
+</script>
+</html>
